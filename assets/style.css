@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+
+
+:root {
+    --ds-primary: #fe6800;
+    --ds-white: #fffefe;
+    --ds-dark: #1b1b1a;
+    --ds-sales: #fe0100;
+    --ds-eco: #018100;
+}
+
+
+
+.d-flex {
+    display: flex;
+}
+
+
+.debug .container {
+    height: 60px;
+}
+
+
+.debug .col {
+    background-color: green;
+}
+
+/* header */
+
+header {
+    background-color: #fe6800;
+    color: white;
+    position: fixed;
+    width: 100%;
+    
+}
+
+header>div {
+   justify-content: center;
+   justify-content: space-between;
+   align-items: center;
+}
+
+    
+
+
+a {
+    text-decoration: none;
+    color: #fffefe;
+    padding: 0.50rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
