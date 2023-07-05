@@ -26,33 +26,79 @@
 }
 
 
+section {
+    width: 100%;
+    height: 100%;
+}
+
+
+main a{
+    text-decoration: none;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 0.75rem;
+}
+
+.icona {
+    color: white;
+}
+
+/*debug*/
+
 .debug .container {
     height: 60px;
 }
 
 
-.debug .col {
-    background-color: green;
+.debug main>.container {
+    background-color: #ff0307;
+    height: 1200px;
+}
+
+
+.debug .row {
+    background-color: #008000;
+    display: flex;
+}
+
+
+.debug .col-3 {
+    width:calc(100%/12*3);
+    background-color: #223fff;
+    margin: 1rem auto;
+}
+
+
+.debug .card {
+    background-color: aquamarine;
+    height: 500px;
+    margin-bottom: 4rem;
 }
 
 /* header */
 
-header {
-    background-color: #fe6800;
-    color: white;
+header{
+    background-color: var(--ds-primary);
+    margin-bottom: 3rem;
     position: fixed;
     width: 100%;
-    
+    z-index: 111;
 }
 
-header>div {
+header>a {
    justify-content: center;
    justify-content: space-between;
    align-items: center;
 }
 
     
-
+header>div{
+    justify-content: center ;
+    justify-content: space-between;
+    align-items: center;
+}
 
 a {
     text-decoration: none;
@@ -62,4 +108,80 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+
+/*main*/
+
+main {
+    background-color: #fff;
+    height: 100vh;
+}
+
+
+
+.card{
+    position: relative;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+}
+
+
+.card>span {
+    position: absolute;
+    bottom: 5%;
+    padding: 0.25rem;
+}
+.heart{
+    top: 10px;
+    right: 0px;
+    height: 30px;
+    aspect-ratio:  1;
+    text-align: center;
+    background-color: var(--ds-white);
+}
+.heart:hover{
+    color: var(--ds-sales);
+}
+
+.sales{
+    background-color: var(--ds-sales);
+    color: var(--text-card);
+    left: 0;
+}
+
+.eco{
+    background-color: var(--ds-eco);
+    color: var(--text-card);
+    left: 3.1rem;
+}
+.price{
+    font-weight: 300;
+}
+.sales_price{
+    color: var(--ds-sales);
+   
+}
+.original_price{
+    text-decoration: line-through;
+}
+
+.row{
+    display: flex;
+}
+
+.col-3{
+    width: calc(100%/12*3);
+    margin: 1rem auto;
+}
+.m-top-3{
+    margin-top: 6rem;
+}
+section a{
+    color: var(--ds-dark);
+    display: block;
+    
 }
